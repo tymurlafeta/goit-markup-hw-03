@@ -52,6 +52,11 @@ button {
   cursor: pointer;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .link:hover,
 .link:focus,
 .contact:hover,
@@ -87,16 +92,25 @@ button {
   padding-right: 15px;
 }
 
-.typical {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* =============== \COMPONENTS =============== */
 
 /* =============== HEADER =============== */
 .header {
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-heder-container {
@@ -178,6 +192,9 @@ button {
 /* =============== HERO =============== */
 
 .section-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+
   text-align: center;
   background-color: var(--dark-headings-color);
 }
@@ -186,7 +203,6 @@ button {
   width: 496px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
 
   color: #ffffff;
   font-size: 56px;
@@ -205,10 +221,6 @@ button {
   border: 1px solid transparent;
 }
 
-.service-btn {
-  padding-bottom: 188px;
-}
-
 .button:hover,
 .button:focus {
   background-color: var(--pressed-state-color);
@@ -216,23 +228,27 @@ button {
 
 /* =============== \HERO =============== */
 
-/* =============== WORKS =============== */
+/* =============== STRATEGY =============== */
 
-.works-list {
-  margin-bottom: 120px;
-}
-
-.list.works-list {
+.list.strategy-list {
   display: flex;
   justify-content: space-between;
 }
 
-.works-item {
+.strategy-item {
   width: 264px;
 }
 
-.works-item:not(:last-child) {
+.strategy-item:not(:last-child) {
   margin-right: 24px;
+}
+
+/* =============== \STRATEGY =============== */
+
+/* =============== WORKS =============== */
+
+.section.works {
+  padding-top: 0;
 }
 
 .works-img {
@@ -240,6 +256,7 @@ button {
   flex-wrap: wrap;
   gap: 24px;
 }
+
 /* =============== \WORKS =============== */
 
 /* =============== TEAM =============== */
@@ -277,11 +294,12 @@ button {
 /* =============== FOOTER =============== */
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--dark-headings-color);
 }
 
 .footer-logo {
-  padding-top: 100px;
   color: var(--light-mode-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -296,13 +314,20 @@ button {
 
 .footer-description {
   width: 264px;
-  padding-bottom: 100px;
   color: var(--footer-text-color);
 }
 
 /* =============== \FOOTER =============== */
 
 /* =============== PORTFOLIO =============== */
+
+.section.examples {
+  padding-top: 96px;
+}
+
+.list.examples {
+  margin-bottom: 72px;
+}
 
 .filter-btn {
   display: inline-block;
@@ -325,15 +350,6 @@ button {
   justify-content: center;
 }
 
-.examples-name {
-  padding-left: 16px;
-}
-
-.product-type {
-  padding-bottom: 32px;
-  padding-left: 16px;
-}
-
 .filter-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -345,9 +361,11 @@ button {
 
 .card-text {
   padding-top: 32px;
-  border-right: 1px solid #E7E9FC;
-  border-bottom: 1px solid #E7E9FC;
-  border-left: 1px solid #E7E9FC;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }
 
 .examples-card {
@@ -362,6 +380,5 @@ button {
 
 .examples-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
-  padding-bottom: 120px;
-}
+  }
 /* =============== /PORTFOLIO =============== */
